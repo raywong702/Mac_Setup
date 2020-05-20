@@ -233,7 +233,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # git
-export PATH=/Users/rwong/forbes/bin/git:${PATH}
+export PATH=~/bin/git:${PATH}
 ```
 
 Add into .vimrc
@@ -689,6 +689,15 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 npm install -g npm-groovy-lint
 ```
+
+Git
+Add these scripts to ~/bin/git
+https://gist.github.com/srebalaji/4b23fb62f6ce26c17b73ca07ae7cfc67#file-git-lazypush
+https://gitbetter.substack.com/p/automate-repetitive-tasks-with-custom
+```bash
+chmod +x *
+```
+
 
 ## vscode ##
 Preferences
