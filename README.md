@@ -20,32 +20,26 @@ brew cask install --appdir="/Applications" \
     android-file-transfer \
     appcleaner \
     bartender \
-    Caskroom/versions/java8 \
-    citrix-workspace \
     cheatsheet \
-    cyberduck \
     docker \
     firefox \
     flux \
     gitkraken \
     google-chrome \
-    insomniax \
+    google-cloud-sdk \
     iterm2 \
     itsycal \
-    luyten \
     osxfuse \
-    pgadmin4 \
     postman \
-    pycharm-ce \
+    rectangle \
     skitch \
-    sourcetree \
-    spectacle \
-    sts \
+    spotify \
     sublime-text \
     the-unarchiver \
     vagrant \
     virtualbox \
-    visual-studio-code
+    visual-studio-code \
+    vlc
 ```
 
 ## Brew Install ##
@@ -53,23 +47,28 @@ brew cask install --appdir="/Applications" \
 brew install \
     ag \
     bash \
-    chromedriver \
     cmake \
     coreutils \
     curl \
+    dive \
     dos2unix \
     findutils \
     fzf \
     git \
+    helm \
+    istio \
+    jq \
+    k9s \
+    kubectx \
     kubernetes-cli \
-    maven \
+    kubetail \
     netcat \
     node \
     ntfs-3g \
     openssl \
-    python@2 \
     python \
     tree \
+    vault \
     vim \
     wget \
     zsh \
