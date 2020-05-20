@@ -731,5 +731,4 @@ Settings
 ```
 CMD + Shift + P
 Python: Select Interpreter
-
 ```
