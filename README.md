@@ -680,6 +680,16 @@ error_log
 *.retry
 ```
 
+Node
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install node
+npm install -g npm-groovy-lint
+```
+
 ## vscode ##
 Preferences
 ```
@@ -722,14 +732,4 @@ Settings
 CMD + Shift + P
 Python: Select Interpreter
 
-```
-
-Node
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm install node
-npm install -g npm-groovy-lint
 ```
