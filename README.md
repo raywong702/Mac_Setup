@@ -67,6 +67,7 @@ brew install \
     ntfs-3g \
     openssl \
     python \
+    sed \
     tree \
     vault \
     vim \
@@ -169,13 +170,6 @@ export HOMEBREW_NO_ANALYTICS=1
 # But use gfind, ggrep, etc. Starts with a 'g'
 BREW_PATHS=$(brew --prefix coreutils)/libexec/gnubin
 PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
-PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
-export PATH
-
-# Java and Maven
-M2_HOME=/usr/local/Cellar/maven/3.5.4/libexec
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
-PATH=$JAVA_HOME/bin:M2_HOME/bin:$PATH
 export PATH
 
 # fzf via Homebrew
@@ -192,7 +186,7 @@ if [ -e ~/.fzf ]; then
 fi
 
 # fzf + ag configuration
-if _has fzf && _has ag; then
+#if _has fzf && _has ag; then
   export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
   export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
   export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -200,13 +194,46 @@ if _has fzf && _has ag; then
   --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
   --color info:108,prompt:109,spinner:108,pointer:168,marker:168
   '
-fi
+#fi
 
 # aliases
 alias prune='docker system prune -af'
 alias bu='brew update; brew upgrade; brew cleanup; brew doctor'
-alias pip2upgrade="pip2 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip2 install -U"
-alias pip3upgrade="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip3 install -U"
+alias pip3upgrade="pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
+alias sed="/usr/local/bin/gsed"
+alias kraken='open -na "GitKraken" --args -p $(pwd)'
+
+# fc
+export FCEDIT=vim
+
+# k8s
+source <(kubectl completion zsh)
+export KUBE_EDITOR=vim
+export TILLER_NAMESPACE=kube-system
+
+# editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Vault
+export VAULT_ADDR=https://vault.forbes.com
+complete -C /usr/local/bin/vault vault
+#autoload -U +X bashcompinit && bashcompinit
+#complete -o nospace -C /usr/local/bin/vault vault
+
+# helm
+source <(helm completion zsh)
+source <(helm3 completion zsh)
+
+# istio
+source /usr/local/Cellar/istio/istio/tools/_istioctl
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# git
+export PATH=/Users/rwong/forbes/bin/git:${PATH}
 ```
 
 Add into .vimrc
@@ -668,15 +695,21 @@ autoDocString
 Bracket Pair Colorizer
 CloudFormation
 Code Spell Checker
+code-groovy
 Docker
+Groovy Lint, Format and Fix
+HCL
+Jenkins Pipeline Linter Connector
 JSON Escaper
 JSON Tools
 Log File Highlighter
 Markdown All in One
 Markdown Preview Enhanced
+Markdown TOC
 markdownlint
 Path Intellisense
 Python
+Python Docstring Generator
 Python-autopep8
 Trailing Spaces
 vscode-ansible-linter
@@ -689,4 +722,14 @@ Settings
 CMD + Shift + P
 Python: Select Interpreter
 
+```
+
+Node
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install node
+npm install -g npm-groovy-lint
 ```
