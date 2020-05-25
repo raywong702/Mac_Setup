@@ -20,6 +20,7 @@ brew cask install --appdir="/Applications" \
     android-file-transfer \
     appcleaner \
     bartender \
+    calibre \
     cheatsheet \
     docker \
     firefox \
@@ -29,6 +30,7 @@ brew cask install --appdir="/Applications" \
     google-cloud-sdk \
     iterm2 \
     itsycal \
+    latest \
     osxfuse \
     postman \
     rectangle \
