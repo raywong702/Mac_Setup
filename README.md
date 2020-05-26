@@ -30,6 +30,7 @@ brew cask install --appdir="/Applications" \
     google-cloud-sdk \
     iterm2 \
     itsycal \
+    java \
     latest \
     osxfuse \
     postman \
