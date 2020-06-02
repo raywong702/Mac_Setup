@@ -38,6 +38,7 @@ brew cask install --appdir="/Applications" \
     skitch \
     spotify \
     sublime-text \
+    tldr \
     the-unarchiver \
     vagrant \
     virtualbox \
@@ -691,7 +692,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install node
 npm install -g npm-groovy-lint
-npm install -g tldr
 ```
 
 Git
