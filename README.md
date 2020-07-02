@@ -60,7 +60,7 @@ brew install \
     fzf \
     git \
     helm \
-    istio \
+    istioctl \
     jq \
     k9s \
     kubectx \
@@ -209,6 +209,9 @@ alias kraken='open -na "GitKraken" --args -p $(pwd)'
 
 # fc
 export FCEDIT=vim
+
+# curl
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # k8s
 source <(kubectl completion zsh)
