@@ -507,6 +507,7 @@ Session.vim
 
 # vscode
 .vscode/
+local-storage.json
 
 # Editors with AutoBackup
 *~
@@ -728,6 +729,7 @@ code-groovy
 Docker
 Groovy Lint, Format and Fix
 HCL
+indent-rainbow
 Jenkins Pipeline Linter Connector
 JSON Escaper
 JSON Tools
