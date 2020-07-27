@@ -72,6 +72,7 @@ brew install \
     openssl \
     python \
     sed \
+    spotmenu \
     tree \
     vault \
     vim \
