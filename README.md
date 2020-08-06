@@ -76,7 +76,6 @@ brew install \
     tree \
     vault \
     vim \
-    wireguard-tools \
     wget \
     zsh \
     zsh-completions
