@@ -37,6 +37,7 @@ brew cask install --appdir="/Applications" \
     rectangle \
     skitch \
     spotify \
+    spotmenu \
     sublime-text \
     tldr \
     the-unarchiver \
