@@ -23,5 +23,23 @@ brew doctor
 ## Brew Cask ##
 
 ```bash
-
+brew install --cask \
+    alfred \
+    android-file-transfer \
+    bartender \
+    docker \
+    flux \
+    gitkraken \
+    iterm2 \
+    itsycal \
+    latest \
+    loom \
+    obsidian \
+    postman \
+    rectangle \
+    spotify \
+    spotmenu \
+    sublime-text \
+    the-unarchiver \
+    visual-studio-code
 ```
