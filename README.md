@@ -56,8 +56,14 @@ brew install \
     asdf \
     font-meslo-lg-nerd-font \
     fzf \
+    git \
+    google-cloud-sdk \
+    jq \
+    k9s \
+    kubernetes-cli \
     stow \
-    zsh
+    zsh \
+    danielfoehrkn/switch/switch
 ```
 
 ```
@@ -177,6 +183,24 @@ p10k configure
 echo "\n. /opt/homebrew/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
 ```
 
+## gcloud ##
+
+```bash
+echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"' >> ~/.zshrc
+
+gcloud components install gke-gcloud-auth-plugin
+
+gcloud auth login
+
+
+```
+
+## kubeswitch ##
+
+```bash
+echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh' >> ~/.zshrc
+```
+
 ## drivers ##
 
 * https://www.synaptics.com/products/displaylink-graphics/downloads/macos
@@ -197,3 +221,4 @@ echo "\n. /opt/homebrew/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
 * https://github.com/romkatv/powerlevel10k
 * https://asdf-vm.com/guide/getting-started.html
 * https://iterm2colorschemes.com
+* https://github.com/danielfoehrKn/kubeswitch
