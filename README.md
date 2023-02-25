@@ -38,6 +38,7 @@ brew install --cask \
     itsycal \
     latest \
     loom \
+    microsoft-edge \
     obsidian \
     postman \
     rectangle \
@@ -53,7 +54,7 @@ brew install --cask \
 ```bash
 brew install \
     asdf \
-    font-hack-nerd-font \
+    font-meslo-lg-nerd-font \
     fzf \
     stow \
     zsh
@@ -108,11 +109,20 @@ sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
 
 ## iTerm ##
 
-* In iTerm 2, go to Preferences->Profile>Text in your iTerm 2 preferences, then select Hack Nerd Font in Font
+```bash
+# https://iterm2colorschemes.com
+mkdir .iterm
+THEME="OneHalfDark"
+curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/${THEME}.itermcolors" -o ~/.iterm/${THEME}.itermcolors
+```
 
-* Select Use built-in-Powerline glyphs?
+* In iTerm 2, go to Preferences->Profile>Text in your iTerm 2 preferences, then select Meslo LGS Nerd Font Mono in Font
+
+* In Colors, choose Color Presets, choose Import, choose Theme you downloaded. May need to do Command + Shift + . to show hidden files. Choose Theme from Color Presets
 
 * In Terminal, choose Unlimited scrollback
+
+* General->Closing Deselect Confirm boxes
 
 ## Zgenom and starter kit ##
 
@@ -136,7 +146,7 @@ p10k configure
 * `y` - Looks like a diamond
 * `y` - Looks like a lock
 * `y` - Looks like a debian logo
-* `n` - Icon overlaps over X
+* `y` - Icons fit between X
 * `1` - Lean
 * `1` - Unicode
 * `1` - 256 Colors
@@ -144,15 +154,22 @@ p10k configure
 * `2` - 2 Lines
 * `1` - Disconnected
 * `1` - No frame
-* `1` - Sparse
+* `2` - Sparse
 * `1` - Few icons
 * `1` - Concise
 * `y` - Enable Transient Prompt
 * `1` - Verbose Instant Prompt
 
+## asdf ##
+
+```bash
+echo "\n. /opt/homebrew/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
+```
+
 ## drivers ##
 
 * https://www.synaptics.com/products/displaylink-graphics/downloads/macos
+* https://www.logitech.com/en-us/software/logi-options-plus.html
 
 
 
@@ -162,3 +179,4 @@ p10k configure
 * https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
 * https://github.com/romkatv/powerlevel10k
 * https://asdf-vm.com/guide/getting-started.html
+* https://iterm2colorschemes.com
