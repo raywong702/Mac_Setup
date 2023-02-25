@@ -60,6 +60,7 @@ brew install \
     google-cloud-sdk \
     jq \
     k9s \
+    kube-ps1 \
     kubernetes-cli \
     stow \
     zsh \
