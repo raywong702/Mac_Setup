@@ -63,6 +63,7 @@ brew install \
     kubernetes-cli \
     stow \
     zsh \
+    zsh-autosuggestions \
     danielfoehrkn/switch/switch
 ```
 
@@ -125,6 +126,8 @@ curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/mast
 * In iTerm 2, go to Preferences->Profile>Text in your iTerm 2 preferences, then select Meslo LGS Nerd Font Mono in Font
 
 * In Colors, choose Color Presets, choose Import, choose Theme you downloaded. May need to do Command + Shift + . to show hidden files. Choose Theme from Color Presets
+
+* Navigate to profile > colors and make sure that the colors for Basic Colors > Background and ANSI Colors > Bright Black are different.
 
 * In Terminal, choose Unlimited scrollback
 
