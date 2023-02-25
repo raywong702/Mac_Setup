@@ -183,6 +183,12 @@ echo "\n. /opt/homebrew/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
 * https://www.logitech.com/en-us/software/logi-options-plus.html
 
 
+## vpn ##
+
+* remoteaccess.forbes.com
+
+
+
 
 ## References ##
 
