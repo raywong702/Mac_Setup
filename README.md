@@ -136,6 +136,17 @@ stow --target="$HOME" zsh
 
 Restart iTerm
 
+Comment out in ~/.zshrc
+
+```bash
+# if [[ $(_zqs-get-setting list-ssh-keys true) == 'true' ]]; then
+#   echo
+#   echo "Current SSH Keys:"
+#   ssh-add -l
+#   echo
+# fi
+```
+
 ## powerlevel10k ##
 
 ```bash
