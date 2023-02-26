@@ -195,8 +195,20 @@ echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/pa
 gcloud components install gke-gcloud-auth-plugin
 
 gcloud auth login
+```
 
+## kube-ps1 ##
 
+Comment out in ~/.p10k.zsh
+
+```bash
+# typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile|flux|fluxctl|stern|kubeseal|skaffold|kubent'
+```
+
+Update in ~/.p10k.zsh
+
+```bash
+typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_CONTENT_EXPANSION+='${P9K_KUBECONTEXT_CLOUD_ACCOUNT}-${P9K_KUBECONTEXT_CLOUD_CLUSTER:-${P9K_KUBECONTEXT_NAME}'
 ```
 
 ## kubeswitch ##
