@@ -115,6 +115,13 @@ To use fzf in Vim, add the following line to your .vimrc:
 sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
 ```
 
+Disable brew analytics in ~/.zshrc
+
+```bash
+echo "\n# brew" >> ~/.zshrc
+echo 'export HOMEBREW_NO_ANALYTICS=1'  >> ~/.zshrc
+```
+
 ## iTerm ##
 
 ```bash
@@ -184,12 +191,14 @@ p10k configure
 ## asdf ##
 
 ```bash
-echo "\n. /opt/homebrew/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
+echo "\n# asdf" >> ~/.zshrc
+echo '. /opt/homebrew/opt/asdf/libexec/asdf.sh' >> ~/.zshrc
 ```
 
 ## gcloud ##
 
 ```bash
+echo "\n# gcloud" >> ~/.zshrc
 echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"' >> ~/.zshrc
 
 gcloud components install gke-gcloud-auth-plugin
@@ -214,6 +223,7 @@ typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_CONTENT_EXPANSION+='${P9K_KUBECONTEX
 ## kubeswitch ##
 
 ```bash
+echo "\n# kubeswitch" >> ~/.zshrc
 echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh' >> ~/.zshrc
 ```
 
