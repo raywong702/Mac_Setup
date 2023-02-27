@@ -61,9 +61,9 @@ brew install \
     google-cloud-sdk \
     jq \
     k9s \
-    kube-ps1 \
     kubernetes-cli \
     stow \
+    vim \
     zsh \
     danielfoehrkn/switch/switch
 ```
@@ -201,6 +201,16 @@ echo "\n# asdf" >> ~/.zshrc
 echo '. /opt/homebrew/opt/asdf/libexec/asdf.sh' >> ~/.zshrc
 ```
 
+```bash
+asdf plugin add istioctl
+asdf install istioctl 1.10.6
+asdf global istioctl 1.10.6
+
+asdf plugin add terraform
+asdf install terraform latest
+asdf global terraform latest
+```
+
 ## gcloud ##
 
 ```bash
@@ -210,6 +220,8 @@ echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/pa
 gcloud components install gke-gcloud-auth-plugin
 
 gcloud auth login
+
+gcloud auth configure-docker
 ```
 
 ## kube-ps1 ##
