@@ -241,6 +241,13 @@ echo "\n# kubeswitch" >> ~/.zshrc
 echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh' >> ~/.zshrc
 ```
 
+## global git ignore ##
+
+```bash
+# global git ignore
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 ## drivers ##
 
 * https://www.synaptics.com/products/displaylink-graphics/downloads/macos
