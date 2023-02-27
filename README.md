@@ -250,6 +250,13 @@ echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/swi
 * https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 * https://www.logitech.com/en-us/software/logi-options-plus.html
 
+## logioptions ##
+
+Scrolling speed: 90%
+Scroll direction: standard
+Smooth scrolling: enabled
+Free spin: enabled
+Pointer speed: 80%
 
 ## vpn ##
 
