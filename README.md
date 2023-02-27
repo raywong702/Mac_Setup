@@ -31,6 +31,7 @@ brew install --cask \
     alfred \
     android-file-transfer \
     bartender \
+    devtoys \
     docker \
     flux \
     gitkraken \
@@ -64,7 +65,6 @@ brew install \
     kubernetes-cli \
     stow \
     zsh \
-    zsh-autosuggestions \
     danielfoehrkn/switch/switch
 ```
 
