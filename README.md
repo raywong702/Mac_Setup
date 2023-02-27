@@ -65,7 +65,8 @@ brew install \
     stow \
     vim \
     zsh \
-    danielfoehrkn/switch/switch
+    danielfoehrkn/switch/switch \
+    rs/tap/curlie
 ```
 
 ```
