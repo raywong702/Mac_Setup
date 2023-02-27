@@ -159,15 +159,10 @@ stow --target="$HOME" zsh
 
 Restart iTerm
 
-Comment out in ~/.zshrc
+Disable printing current ssh. Stop instant prompt verbose warning
 
 ```bash
-# if [[ $(_zqs-get-setting list-ssh-keys true) == 'true' ]]; then
-#   echo
-#   echo "Current SSH Keys:"
-#   ssh-add -l
-#   echo
-# fi
+zqs disable-ssh-key-listing
 ```
 
 ## powerlevel10k ##
