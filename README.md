@@ -224,7 +224,7 @@ gcloud auth login
 gcloud auth configure-docker
 ```
 
-## kube-ps1 ##
+## kube-context ##
 
 Comment out in ~/.p10k.zsh
 
