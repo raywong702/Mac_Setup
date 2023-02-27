@@ -135,7 +135,13 @@ curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/mast
 
 * In Colors, choose Color Presets, choose Import, choose Theme you downloaded. May need to do Command + Shift + . to show hidden files. Choose Theme from Color Presets
 
+* In Window, mkae transparency 57
+
 * Navigate to profile > colors and make sure that the colors for Basic Colors > Background and ANSI Colors > Bright Black are different.
+
+Background: 343a43
+Black Normal: 090a0b
+Black Bright: 1768f7
 
 * In Terminal, choose Unlimited scrollback
 
