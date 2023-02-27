@@ -62,6 +62,7 @@ brew install \
     jq \
     k9s \
     kubernetes-cli \
+    ripgrep \
     stow \
     vim \
     zsh \
@@ -246,7 +247,32 @@ echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/swi
 ```bash
 # global git ignore
 git config --global core.excludesfile ~/.gitignore_global
+
+curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitignore_global -o ~/.gitignore_global
 ```
+
+## docker ##
+
+* settings > general
+* Start Docker Desktop when you log in
+* Disable Send usage statistics
+* Disable Show weekly tips
+* settings > docker engine append
+
+```bash
+,
+  "max-concurrent-downloads": 50,
+  "max-concurrent-uploads": 50
+```
+
+## monosnap ##
+
+* download monosnap from the appstore
+
+* perhaps use mas?
+
+https://github.com/mas-cli/mas#-homebrew-integration
+
 
 ## drivers ##
 
@@ -276,3 +302,4 @@ Pointer speed: 80%
 * https://asdf-vm.com/guide/getting-started.html
 * https://iterm2colorschemes.com
 * https://github.com/danielfoehrKn/kubeswitch
+* https://github.com/mas-cli/mas#-homebrew-integration
