@@ -249,6 +249,13 @@ echo "\n# kubeswitch" >> ~/.zshrc
 echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh' >> ~/.zshrc
 ```
 
+## thefuck ##
+
+```bash
+echo "\n# thefuck" >> ~/.zshrc
+echo 'eval $(thefuck --alias)' >> ~/.zshrc
+```
+
 ## global git ignore ##
 
 ```bash
