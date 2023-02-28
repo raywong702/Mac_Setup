@@ -68,6 +68,7 @@ brew install \
     neovim \
     ripgrep \
     stow \
+    thefuck \
     vim \
     zsh \
     danielfoehrkn/switch/switch \
@@ -165,10 +166,12 @@ stow --target="$HOME" zsh
 
 Restart iTerm
 
-Disable printing current ssh. Stop instant prompt verbose warning
-
 ```bash
+# Disable printing current ssh. Stop instant prompt verbose warning
 zqs disable-ssh-key-listing
+
+# Enable oh my zsh plugins
+zqs enable-omz-plugins
 ```
 
 ## powerlevel10k ##
