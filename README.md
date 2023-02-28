@@ -30,6 +30,7 @@ brew tap homebrew/cask-fonts
 brew install --cask \
     alfred \
     android-file-transfer \
+    appcleaner \
     bartender \
     devtoys \
     docker \
@@ -43,6 +44,7 @@ brew install --cask \
     obsidian \
     postman \
     rectangle \
+    skitch \
     spotify \
     spotmenu \
     sublime-text \
@@ -56,12 +58,14 @@ brew install --cask \
 brew install \
     asdf \
     font-meslo-lg-nerd-font \
+    fd \
     fzf \
     git \
     google-cloud-sdk \
     jq \
     k9s \
     kubernetes-cli \
+    neovim \
     ripgrep \
     stow \
     vim \
@@ -264,15 +268,6 @@ curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitign
   "max-concurrent-downloads": 50,
   "max-concurrent-uploads": 50
 ```
-
-## monosnap ##
-
-* download monosnap from the appstore
-
-* perhaps use mas?
-
-https://github.com/mas-cli/mas#-homebrew-integration
-
 
 ## drivers ##
 
