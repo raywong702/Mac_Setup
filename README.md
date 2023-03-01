@@ -23,7 +23,9 @@ brew doctor
 ## Brew Cask ##
 
 ```bash
-brew tap homebrew/cask-fonts
+brew tap \
+  homebrew/cask-fonts \
+  vmware-tanzu/carvel
 ```
 
 ```bash
@@ -71,6 +73,8 @@ brew install \
     stow \
     thefuck \
     vim \
+    yq \
+    ytt \
     zsh \
     danielfoehrkn/switch/switch \
     rs/tap/curlie
@@ -116,6 +120,20 @@ To use fzf in Vim, add the following line to your .vimrc:
   set rtp+=/opt/homebrew/opt/fzf
 ```
 
+```bash
+brew install \
+  bash \
+  coreutils \
+  findutils \
+  gnu-tar \
+  gnu-sed \
+  gawk \
+  gnutls \
+  gnu-indent \
+  gnu-getopt \
+  grep
+```
+
 ## Post Brew ##
 
 ```bash
@@ -128,6 +146,22 @@ Disable brew analytics in ~/.zshrc
 ```bash
 echo "\n# brew" >> ~/.zshrc
 echo 'export HOMEBREW_NO_ANALYTICS=1'  >> ~/.zshrc
+```
+
+```bash
+echo "\n# GNU" >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"' >> ~/.zshrc
+
+echo "\n# MANPATH" >> ~/.zshrc
+echo 'export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
+echo 'export MANPATH="$(brew --prefix)/opt/findutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
+echo 'export MANPATH="$(brew --prefix)/opt/gnu-tar/libexec/gnuman:MANPATH"' >> ~/.zshrc
+echo 'export MANPATH="$(brew --prefix)/opt/gnu-sed/libexec/gnuman:MANPATH"' >> ~/.zshrc
+echo 'export MANPATH="$(brew --prefix)/opt/gnu-indent/libexec/gnuman:$MANPATH"' >> ~/.zshrc
 ```
 
 ## iTerm ##
@@ -214,6 +248,10 @@ asdf global istioctl 1.10.6
 asdf plugin add terraform
 asdf install terraform latest
 asdf global terraform latest
+
+asdf plugin add vault
+asdf install vault 1.10.2
+asdf global vault 1.10.2
 ```
 
 ## gcloud ##
@@ -292,6 +330,12 @@ Scroll direction: standard
 Smooth scrolling: enabled
 Free spin: enabled
 Pointer speed: 80%
+
+## vscode ##
+
+Command + ,
+* `terminal.integrated.font` and set to `MesloLGS Nerd Font Mono`
+* `telemetry` and set to `off`
 
 ## vpn ##
 
