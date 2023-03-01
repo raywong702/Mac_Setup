@@ -353,3 +353,4 @@ Command + ,
 * https://iterm2colorschemes.com
 * https://github.com/danielfoehrKn/kubeswitch
 * https://github.com/mas-cli/mas#-homebrew-integration
+* https://betterprogramming.pub/how-to-make-macos-command-utilities-compatible-with-gnu-core-utilities-87889b266f4b
