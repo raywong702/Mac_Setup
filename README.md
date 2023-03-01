@@ -67,6 +67,7 @@ brew install \
     kubernetes-cli \
     neovim \
     ripgrep \
+    stern \
     stow \
     thefuck \
     vim \
