@@ -66,6 +66,7 @@ brew install \
     google-cloud-sdk \
     jq \
     k9s \
+    kubent \
     kubernetes-cli \
     neovim \
     ripgrep \
