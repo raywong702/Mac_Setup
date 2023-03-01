@@ -182,7 +182,9 @@ curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/mast
 * Navigate to profile > colors and make sure that the colors for Basic Colors > Background and ANSI Colors > Bright Black are different.
 
 Background: 343a43
+
 Black Normal: 090a0b
+
 Black Bright: 1768f7
 
 * In Terminal, choose Unlimited scrollback
