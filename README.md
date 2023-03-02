@@ -257,6 +257,10 @@ asdf global terraform latest
 asdf plugin add vault
 asdf install vault 1.10.2
 asdf global vault 1.10.2
+
+asdf plugin add golang
+asdf install golang latest
+asdf global golang latest
 ```
 
 ## gcloud ##
