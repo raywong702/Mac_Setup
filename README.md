@@ -307,6 +307,16 @@ git config --global core.excludesfile ~/.gitignore_global
 curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitignore_global -o ~/.gitignore_global
 ```
 
+## nvim ##
+
+```bash
+mkdir -p ~/.config/nvim
+cd ~/.config/nvim
+git cone https://github.com/raywong702/kickstart.nvim.git .
+cd -
+nvim
+```
+
 ## docker ##
 
 * settings > general
@@ -357,3 +367,4 @@ Command + ,
 * https://github.com/danielfoehrKn/kubeswitch
 * https://github.com/mas-cli/mas#-homebrew-integration
 * https://betterprogramming.pub/how-to-make-macos-command-utilities-compatible-with-gnu-core-utilities-87889b266f4b
+* https://github.com/nvim-lua/kickstart.nvim
