@@ -323,6 +323,24 @@ cd -
 nvim
 ```
 
+## mason ##
+
+Installed (13)
+
+* autoflake
+* autopep8
+* beautysh
+* gitlint
+* gofumpt
+* golangci-lint-langserver
+* gopls
+* lua-language-server
+* prettier
+* pylint
+* yaml-language-server
+* yamlfmt
+* yamllint
+
 ## docker ##
 
 * settings > general
