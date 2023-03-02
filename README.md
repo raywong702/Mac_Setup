@@ -318,7 +318,7 @@ curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitign
 ```bash
 mkdir -p ~/.config/nvim
 cd ~/.config/nvim
-git cone https://github.com/raywong702/kickstart.nvim.git .
+git cone https://github.com/nvim-lua/kickstart.nvim.git .
 cd -
 nvim
 ```
