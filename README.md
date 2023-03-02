@@ -68,6 +68,7 @@ brew install \
     k9s \
     kubent \
     kubernetes-cli \
+    kustomize \
     neovim \
     npm \
     ripgrep \
