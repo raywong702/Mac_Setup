@@ -337,6 +337,8 @@ Installed (13)
 * lua-language-server
 * prettier
 * pylint
+* terraform-ls
+* tflint
 * yaml-language-server
 * yamlfmt
 * yamllint
