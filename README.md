@@ -73,6 +73,7 @@ brew install \
     stern \
     stow \
     thefuck \
+    tree \
     vim \
     yq \
     ytt \
