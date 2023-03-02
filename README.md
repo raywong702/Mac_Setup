@@ -69,6 +69,7 @@ brew install \
     kubent \
     kubernetes-cli \
     neovim \
+    npm \
     ripgrep \
     stern \
     stow \
