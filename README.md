@@ -64,6 +64,7 @@ brew install \
     fzf \
     git \
     google-cloud-sdk \
+    helm \
     jq \
     k9s \
     kubent \
