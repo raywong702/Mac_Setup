@@ -306,6 +306,12 @@ echo "\n# thefuck" >> ~/.zshrc
 echo 'eval $(thefuck --alias)' >> ~/.zshrc
 ```
 
+## git auto setup remote ##
+
+```bash
+git config --global --add --bool push.autoSetupRemote true
+```
+
 ## global git ignore ##
 
 ```bash
