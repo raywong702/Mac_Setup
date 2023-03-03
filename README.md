@@ -412,7 +412,6 @@ Extensions
 * markdownlint
 * Peacock
 * Prettier
-* Settings Sync
 * TODO Highlight
 * Trailing Spaces
 * VCL - Varnish Configuration Language
