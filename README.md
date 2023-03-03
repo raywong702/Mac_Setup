@@ -388,11 +388,11 @@ Installed (13)
 
 ## logioptions ##
 
-Scrolling speed: 90%
-Scroll direction: standard
-Smooth scrolling: enabled
-Free spin: enabled
-Pointer speed: 80%
+* Scrolling speed: 90%
+* Scroll direction: standard
+* Smooth scrolling: enabled
+* Free spin: enabled
+* Pointer speed: 80%
 
 ## vscode ##
 
