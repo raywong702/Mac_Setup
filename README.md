@@ -315,6 +315,13 @@ echo 'eval $(thefuck --alias)' >> ~/.zshrc
 tldr --update
 ```
 
+## git global config ##
+
+```bash
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+```
+
 ## git auto setup remote ##
 
 ```bash
@@ -392,6 +399,26 @@ Pointer speed: 80%
 Command + ,
 * `terminal.integrated.font` and set to `MesloLGS Nerd Font Mono`
 * `telemetry` and set to `off`
+* `bracketPair` and select checkbox
+
+Extensions
+* Code Spell Checker
+* CodeSnap
+* Docker
+* GitLens
+* HashiCorp Terraform
+* Markdown All in One
+* Markdown Preview Enhanced
+* markdownlint
+* Peacock
+* Prettier
+* Settings Sync
+* TODO Highlight
+* Trailing Spaces
+* VCL - Varnish Configuration Language
+* vscode-icons
+* YAML
+
 
 ## vpn ##
 
