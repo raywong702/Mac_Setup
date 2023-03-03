@@ -397,11 +397,13 @@ Pointer speed: 80%
 ## vscode ##
 
 Command + ,
+
 * `terminal.integrated.font` and set to `MesloLGS Nerd Font Mono`
 * `telemetry` and set to `off`
 * `bracketPair` and select checkbox
 
 Extensions
+
 * Code Spell Checker
 * CodeSnap
 * Docker
@@ -418,13 +420,15 @@ Extensions
 * vscode-icons
 * YAML
 
+Peacock Extension Settings
+
+* Surprise Me on Startup
+
+Profile Icon > Enable Settings Sync
 
 ## vpn ##
 
 * remoteaccess.forbes.com
-
-
-
 
 ## References ##
 
