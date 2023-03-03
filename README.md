@@ -34,8 +34,10 @@ brew install --cask \
     android-file-transfer \
     appcleaner \
     bartender \
+    bat \
     devtoys \
     docker \
+    exa \
     flux \
     gitkraken \
     iterm2 \
