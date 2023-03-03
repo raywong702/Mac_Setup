@@ -53,6 +53,7 @@ brew install --cask \
     spotmenu \
     sublime-text \
     the-unarchiver \
+    tealdeer \
     visual-studio-code
 ```
 
@@ -306,6 +307,12 @@ echo 'INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/swi
 ```bash
 echo "\n# thefuck" >> ~/.zshrc
 echo 'eval $(thefuck --alias)' >> ~/.zshrc
+```
+
+## tealdeer / tldr ##
+
+```bash
+tldr --update
 ```
 
 ## git auto setup remote ##
