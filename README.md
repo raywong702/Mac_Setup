@@ -315,6 +315,13 @@ echo 'eval $(thefuck --alias)' >> ~/.zshrc
 tldr --update
 ```
 
+## vault ##
+
+```bash
+echo "\n# vault" >> ~/.zshrc
+echo 'export VAULT_ADDR=https://vault.forbes.com' >> ~/.zshrc
+```
+
 ## git global config ##
 
 ```bash
