@@ -393,6 +393,8 @@ Installed (13)
 * Smooth scrolling: enabled
 * Free spin: enabled
 * Pointer speed: 80%
+* Thumb wheel speed: 70%
+* Thumb wheel direction: inverted
 
 ## vscode ##
 
