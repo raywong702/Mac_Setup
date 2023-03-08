@@ -34,10 +34,8 @@ brew install --cask \
     android-file-transfer \
     appcleaner \
     bartender \
-    bat \
     devtoys \
     docker \
-    exa \
     flux \
     gitkraken \
     iterm2 \
@@ -62,6 +60,8 @@ brew install --cask \
 ```bash
 brew install \
     asdf \
+    bat \
+    exa \
     font-meslo-lg-nerd-font \
     fd \
     fzf \
