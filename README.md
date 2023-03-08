@@ -63,6 +63,7 @@ brew install --cask \
 brew install \
     asdf \
     bat \
+    container-diff \
     exa \
     font-meslo-lg-nerd-font \
     fd \
@@ -87,6 +88,7 @@ brew install \
     ytt \
     zsh \
     danielfoehrkn/switch/switch \
+    lingrino/tap/vaku \
     rs/tap/curlie
 ```
 
