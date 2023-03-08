@@ -219,6 +219,9 @@ zqs disable-ssh-key-listing
 
 # Enable oh my zsh plugins
 zqs enable-omz-plugins
+
+# Update visual to nvim
+curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/001-nvim -o ~/.zshrc.d/001-nvim
 ```
 
 ## powerlevel10k ##

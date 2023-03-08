@@ -1,0 +1,12 @@
+# So does brew
+if can_haz brew; then
+  brew_prefix="$(brew --prefix)/bin"
+  if [[ -x "$brew_prefix/nvim" ]]; then
+      alias vim="$brew_prefix/nvim"
+      alias vi="$brew_prefix/nvim"
+      export EDITOR="$brew_prefix/nvim"
+  fi
+  unset brew_prefix
+fi
+
+export VISUAL=${EDITOR}
