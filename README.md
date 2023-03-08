@@ -34,6 +34,7 @@ brew install --cask \
     android-file-transfer \
     appcleaner \
     bartender \
+    copyclip \
     devtoys \
     docker \
     flux \
@@ -46,6 +47,7 @@ brew install --cask \
     obsidian \
     postman \
     rectangle \
+    shottr \
     skitch \
     spotify \
     spotmenu \
