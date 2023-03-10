@@ -61,6 +61,8 @@ brew install --cask \
 
 ```bash
 brew install \
+    argo \
+    argocd \
     asdf \
     bat \
     container-diff \
