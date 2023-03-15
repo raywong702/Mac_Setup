@@ -34,7 +34,6 @@ brew install --cask \
     android-file-transfer \
     appcleaner \
     bartender \
-    copyclip \
     devtoys \
     docker \
     flux \
