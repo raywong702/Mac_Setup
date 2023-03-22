@@ -190,7 +190,9 @@ curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/mast
 
 * In Colors, choose Color Presets, choose Import, choose Theme you downloaded. May need to do Command + Shift + . to show hidden files. Choose Theme from Color Presets
 
-* In Window, mkae transparency 57
+* In Keys, choose Left Option key to be Esc+
+
+* In Window, make transparency 57
 
 * Navigate to profile > colors and make sure that the colors for Basic Colors > Background and ANSI Colors > Bright Black are different.
 
