@@ -67,6 +67,7 @@ brew install \
     bat \
     container-diff \
     exa \
+    fastlane \
     font-meslo-lg-nerd-font \
     fd \
     fzf \
@@ -277,6 +278,14 @@ asdf global vault 1.10.2
 asdf plugin add golang
 asdf install golang latest
 asdf global golang latest
+
+asdf plugin add java
+asdf install java openjdk-19.0.2
+asdf global java openjdk-19.0.2
+
+asdf plugin add gradle
+asdf install gradle 7.5
+asdf global gradle 7.5
 ```
 
 ## gcloud ##
@@ -331,6 +340,28 @@ tldr --update
 ```bash
 echo "\n# vault" >> ~/.zshrc
 echo 'export VAULT_ADDR=https://vault.forbes.com' >> ~/.zshrc
+```
+
+## java home
+
+```bash
+echo "\n# java home" >> ~/.zshrc
+echo '. ~/.asdf/plugins/java/set-java-home.zsh' >> ~/.zshrc
+```
+
+## fastlane
+
+```bash
+echo "\n# Fastlane" >> ~/.zshrc
+echo 'export LC_ALL=en_US.UTF-8' >> ~/.zshrc
+echo 'export LANG=en_US.UTF-8' >> ~/.zshrc
+```
+
+## docker
+
+```bash
+echo "\n# docker" >> ~/.zshrc
+echo 'export DOCKER_DEFAULT_PLATFORM=linux/amd64' >> ~/.zshrc
 ```
 
 ## git global config ##
