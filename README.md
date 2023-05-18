@@ -53,7 +53,8 @@ brew install --cask \
     sublime-text \
     the-unarchiver \
     tealdeer \
-    visual-studio-code
+    visual-studio-code \
+    zoxide
 ```
 
 ## Brew Install ##
