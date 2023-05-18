@@ -364,6 +364,13 @@ echo "\n# docker" >> ~/.zshrc
 echo 'export DOCKER_DEFAULT_PLATFORM=linux/amd64' >> ~/.zshrc
 ```
 
+## zoxide
+echo "\n# zoxide" >> ~/.zshrc
+echo 'eval "$(zoxide init zsh)"' >> ~/.zshrc
+```bash
+
+```
+
 ## git global config ##
 
 ```bash
