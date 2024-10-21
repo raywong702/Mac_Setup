@@ -63,44 +63,51 @@ brew install --cask \
 brew install \
     argo \
     argocd \
-    asdf \
+    argocd-vault-plugin \
+    awscli \
     bat \
     container-diff \
+    dive \
     exa \
     fastlane \
     font-meslo-lg-nerd-font \
     fd \
     fzf \
     git \
+    gh \
     google-cloud-sdk \
     helm \
     jq \
+    k3d \
     k9s \
+    kube-capacity \
+    kubecolor \
     kubent \
     kubernetes-cli \
     kustomize \
+    mise \
     neovim \
     npm \
     ripgrep \
     stern \
     stow \
+    swiftformat \
+    swiftlint \
+    tealdeer \
     thefuck \
     tree \
     vim \
     yq \
     ytt \
+    zoxide \
     zsh \
+    zstd \
     danielfoehrkn/switch/switch \
     lingrino/tap/vaku \
     rs/tap/curlie
 ```
 
 ```
-To use asdf, add the following line (or equivalent) to your shell profile
-e.g. ~/.profile or ~/.zshrc:
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-Restart your terminal for the settings to take effect.
-
 zsh completions have been installed to:
   /opt/homebrew/share/zsh/site-functions
 ==> Summary
@@ -119,11 +126,6 @@ To use fzf in Vim, add the following line to your .vimrc:
 🍺  /opt/homebrew/Cellar/fzf/0.38.0: 17 files, 3.5MB
 ==> Running `brew cleanup fzf`...
 ==> Caveats
-==> asdf
-To use asdf, add the following line (or equivalent) to your shell profile
-e.g. ~/.profile or ~/.zshrc:
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-Restart your terminal for the settings to take effect.
 
 zsh completions have been installed to:
   /opt/homebrew/share/zsh/site-functions
@@ -255,39 +257,6 @@ p10k configure
 * `y` - Enable Transient Prompt
 * `1` - Verbose Instant Prompt
 
-## asdf ##
-
-```bash
-echo "\n# asdf" >> ~/.zshrc
-echo '. /opt/homebrew/opt/asdf/libexec/asdf.sh' >> ~/.zshrc
-```
-
-```bash
-asdf plugin add istioctl
-asdf install istioctl 1.10.6
-asdf global istioctl 1.10.6
-
-asdf plugin add terraform
-asdf install terraform latest
-asdf global terraform latest
-
-asdf plugin add vault
-asdf install vault 1.10.2
-asdf global vault 1.10.2
-
-asdf plugin add golang
-asdf install golang latest
-asdf global golang latest
-
-asdf plugin add java
-asdf install java openjdk-19.0.2
-asdf global java openjdk-19.0.2
-
-asdf plugin add gradle
-asdf install gradle 7.5
-asdf global gradle 7.5
-```
-
 ## gcloud ##
 
 ```bash
@@ -342,13 +311,6 @@ echo "\n# vault" >> ~/.zshrc
 echo 'export VAULT_ADDR=https://vault.forbes.com' >> ~/.zshrc
 ```
 
-## java home
-
-```bash
-echo "\n# java home" >> ~/.zshrc
-echo '. ~/.asdf/plugins/java/set-java-home.zsh' >> ~/.zshrc
-```
-
 ## fastlane
 
 ```bash
@@ -365,10 +327,61 @@ echo 'export DOCKER_DEFAULT_PLATFORM=linux/amd64' >> ~/.zshrc
 ```
 
 ## zoxide
+
+```bash
 echo "\n# zoxide" >> ~/.zshrc
 echo 'eval "$(zoxide init zsh)"' >> ~/.zshrc
-```bash
+```
 
+## Fastlane
+
+```bash
+echo "\n# Fastlane" >> ~/.zshrc
+echo "LC_ALL=en_US.UTF-8" >> ~/.zshrc
+echo "LANG=en_US.UTF-8" >> ~/.zshrc
+```
+
+## zoxicde
+
+```bash
+echo "\n# zoxide" >> ~/.zshrc
+echo '"$(zoxide init zsh)"' >> ~/.zshrc
+```
+
+## go
+
+```bash
+echo "\n# go" >> ~/.zshrc
+echo "PATH=~/go/bin:${PATH}" >> ~/.zshrc
+```
+
+## android
+
+```bash
+echo "\n# android" >> ~/.zshrc
+echo "export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools" >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/share/android-commandlinetools/platform-tools:/opt/homebrew/share/android-commandlinetools/emulator:$PATH"' >> ~/.zshrc
+```
+
+## kubecolor
+
+```bash
+echo "\n# kubecolor"
+echo "kubectl="kubecolor"" >> ~/.zshrc
+```
+
+## mise
+
+```bash
+echo "\n#" >> ~/.zshrc
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+```
+
+## gitkraken
+
+```bash
+echo "\n# gitkraken" >> ~/.zshrc
+echo 'alias kraken="open gitkraken://repo/$(pwd)"' >> ~/.zshrc
 ```
 
 ## git global config ##
@@ -465,13 +478,16 @@ Extensions
 * Code Spell Checker
 * CodeSnap
 * Docker
+* GitHub Copilot
+* GitHub Copilot Chat
+* Go
 * GitLens
 * HashiCorp Terraform
 * Markdown All in One
 * Markdown Preview Enhanced
 * markdownlint
 * Peacock
-* Prettier
+* Prettier - Code formatter
 * TODO Highlight
 * Trailing Spaces
 * VCL - Varnish Configuration Language
@@ -487,6 +503,13 @@ Profile Icon > Enable Settings Sync
 ## vpn ##
 
 * remoteaccess.forbes.com
+
+## neovim ##
+
+```
+:Lazy
+:Mason
+```
 
 ## References ##
 
