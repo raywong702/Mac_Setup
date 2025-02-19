@@ -436,6 +436,18 @@ Installed (13)
 * yamlfmt
 * yamllint
 
+## nvim mason and lazy updates ##
+
+```bash
+vi
+:Mason
+U
+:q!
+:Lazy
+U
+:q!
+```
+
 ## docker ##
 
 * settings > general
