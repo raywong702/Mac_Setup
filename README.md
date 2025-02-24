@@ -47,14 +47,12 @@ brew install --cask \
     postman \
     rectangle \
     shottr \
-    skitch \
     spotify \
     spotmenu \
     sublime-text \
     the-unarchiver \
     tealdeer \
-    visual-studio-code \
-    zoxide
+    visual-studio-code
 ```
 
 ## Brew Install ##
@@ -68,7 +66,7 @@ brew install \
     bat \
     container-diff \
     dive \
-    exa \
+    eza \
     fastlane \
     font-meslo-lg-nerd-font \
     fd \
@@ -96,6 +94,7 @@ brew install \
     tealdeer \
     thefuck \
     tree \
+    vendir \
     vim \
     yq \
     ytt \
@@ -406,6 +405,73 @@ git config --global core.excludesfile ~/.gitignore_global
 curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitignore_global -o ~/.gitignore_global
 ```
 
+## global git config ##
+
+```bash
+cat <<EOF >> ~/.gitconfig
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[color]
+	ui = auto
+
+
+# clearly makes git better
+
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
+[init]
+        defaultBranch = main
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+
+# why the hell not?
+
+[help]
+        autocorrect = prompt
+[commit]
+        verbose = true
+[rerere]
+        enabled = true
+        autoupdate = true
+[core]
+        excludesfile = ~/.gitignore
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
+# a matter of taste (uncomment if you dare)
+
+[core]
+        # fsmonitor = true
+        # untrackedCache = true
+[merge]
+        # (just 'diff3' if git version < 2.3)
+        # conflictstyle = zdiff3
+[pull]
+        # rebase = true
+EOF
+```
+
 ## nvim ##
 
 ```bash
@@ -534,3 +600,4 @@ Profile Icon > Enable Settings Sync
 * https://github.com/mas-cli/mas#-homebrew-integration
 * https://betterprogramming.pub/how-to-make-macos-command-utilities-compatible-with-gnu-core-utilities-87889b266f4b
 * https://github.com/nvim-lua/kickstart.nvim
+* https://blog.gitbutler.com/how-git-core-devs-configure-git/
