@@ -79,18 +79,29 @@ brew install \
     argocd \
     argocd-vault-plugin \
     awscli \
+	bash \
     bat \
     container-diff \
+	coreutils \
+	crane \
+	curlie \
     dive \
     eza \
     fastlane \
+	fastly \
     font-meslo-lg-nerd-font \
     fd \
+	findutils \
     fzf \
-    git \
     gh \
+	git \
+	git-delta \
+	git-filter-repo
+	go \
     google-cloud-sdk \
+	goreleaser \
     helm \
+	frog-cli \
     jq \
     k3d \
     k9s \
@@ -102,14 +113,18 @@ brew install \
     mise \
     neovim \
     npm \
+	mongoose \
     ripgrep \
     stern \
     stow \
     swiftformat \
     swiftlint \
+	switch \
     tealdeer \
+	terminal-notifier \
     thefuck \
     tree \
+	vaku \
     vendir \
     vim \
     yq \
