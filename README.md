@@ -68,10 +68,15 @@ brew install --cask \
     visual-studio-code \
 	vnc-viewer \
 	wireshark-app \
-	zed
+	zed \
+	lingrino/tap/vaku
 ```
 
 ## Brew Install ##
+
+```
+brew trust danielfoehrkn/switch
+```
 
 ```bash
 brew install \
