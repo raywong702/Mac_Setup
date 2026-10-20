@@ -517,7 +517,7 @@ EOF
 ```bash
 mkdir -p ~/.config/nvim
 cd ~/.config/nvim
-git cone https://github.com/nvim-lua/kickstart.nvim.git .
+git clone https://github.com/nvim-lua/kickstart.nvim.git .
 cd -
 nvim
 ```
