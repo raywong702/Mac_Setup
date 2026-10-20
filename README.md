@@ -144,33 +144,37 @@ brew install \
 ```
 
 ```
+==> Caveats
 zsh completions have been installed to:
   /opt/homebrew/share/zsh/site-functions
-==> Summary
-🍺  /opt/homebrew/Cellar/asdf/0.11.2: 173 files, 714.2KB
-==> Running `brew cleanup asdf`...
-Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
-Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
-==> Pouring fzf--0.38.0.arm64_ventura.bottle.tar.gz
-==> Caveats
-To install useful keybindings and fuzzy completion:
-  /opt/homebrew/opt/fzf/install
-
-To use fzf in Vim, add the following line to your .vimrc:
-  set rtp+=/opt/homebrew/opt/fzf
-==> Summary
-🍺  /opt/homebrew/Cellar/fzf/0.38.0: 17 files, 3.5MB
-==> Running `brew cleanup fzf`...
-==> Caveats
-
-zsh completions have been installed to:
+zsh completions and functions have been installed to:
   /opt/homebrew/share/zsh/site-functions
+==> bash
+DEFAULT_LOADABLE_BUILTINS_PATH: /opt/homebrew/lib/bash:/usr/local/lib/bash:/usr/lib/bash:/opt/local/lib/bash:/usr/pkg/lib/bash:/opt/pkg/lib/bash:.
+==> coreutils
+Commands also provided by macOS and the commands dir, dircolors, vdir have been installed with the prefix "g".
+If you need to use these commands with their normal names, you can add a "gnubin" directory to your PATH with:
+  PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 ==> fzf
-To install useful keybindings and fuzzy completion:
-  /opt/homebrew/opt/fzf/install
-
+To set up shell integration, see:
+  https://github.com/junegunn/fzf#setting-up-shell-integration
 To use fzf in Vim, add the following line to your .vimrc:
   set rtp+=/opt/homebrew/opt/fzf
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+==> mise
+If you are using fish shell, mise will be activated for you automatically.
+==> node
+Single Executable Application is disabled as it doesn't work with shared libnode.
+==> thefuck
+Add the following to your .bash_profile, .bashrc or .zshrc:
+
+  eval $(thefuck --alias)
+
+For other shells, check https://github.com/nvbn/thefuck/wiki/Shell-aliases
+==> vim
+Additional features can be enabled by installing: lua, python@3.15, ruby
 ```
 
 ```bash
