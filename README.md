@@ -34,20 +34,30 @@ brew tap \
 ```bash
 brew install --cask \
     alfred \
+	android-commandlinetools \
     android-file-transfer \
     appcleaner \
     bartender \
+	castctl \
     devtoys \
     docker \
-    flux \
+	firefox \
+    flux-app \
+	font-hack-nerd-font \
+	font-meslo-lg-nerd-font \
+	gcloud-cli \
     gitkraken \
+	google-cloud-sdk \
     iterm2 \
     itsycal \
     latest \
     loom \
     microsoft-edge \
     obsidian \
+	orbstack \
+	pgadmin4 \
     postman \
+	realnvnc-connect-viewer
     rectangle \
     shottr \
     spotify \
@@ -55,7 +65,10 @@ brew install --cask \
     sublime-text \
     the-unarchiver \
     tealdeer \
-    visual-studio-code
+    visual-studio-code \
+	vnc-viewer \
+	wireshark-app \
+	zed
 ```
 
 ## Brew Install ##
