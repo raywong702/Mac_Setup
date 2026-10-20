@@ -111,9 +111,10 @@ brew install \
     kubernetes-cli \
     kustomize \
     mise \
+	mongoose \
     neovim \
     npm \
-	mongoose \
+	pluto \
     ripgrep \
     stern \
     stow \
