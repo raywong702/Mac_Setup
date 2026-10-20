@@ -227,7 +227,7 @@ echo 'export MANPATH="$(brew --prefix)/opt/gnu-indent/libexec/gnuman:$MANPATH"' 
 # https://iterm2colorschemes.com
 mkdir .iterm
 THEME="OneHalfDark"
-curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/${THEME}.itermcolors" -o ~/.iterm/${THEME}.itermcolors
+curl -sSL "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/refs/heads/master/schemes/One%20Half%20Dark.itermcolors" -o ~/.iterm/${THEME}.itermcolors
 ```
 
 * In iTerm 2, go to Preferences->Profile>Text in your iTerm 2 preferences, then select Meslo LGS Nerd Font Mono in Font
