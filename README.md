@@ -101,7 +101,7 @@ brew install \
     google-cloud-sdk \
 	goreleaser \
     helm \
-	frog-cli \
+	jfrog-cli \
     jq \
     k3d \
     k9s \
