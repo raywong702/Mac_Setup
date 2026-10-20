@@ -130,6 +130,7 @@ brew install \
 	terminal-notifier \
     thefuck \
     tree \
+	tree-sitter-cli \
 	vaku \
     vendir \
     vim \
