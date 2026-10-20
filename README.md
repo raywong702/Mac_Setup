@@ -254,10 +254,9 @@ Black Bright: 1768f7
 
 ```bash
 cd ~
-git clone https://github.com/jandamm/zgenom.git
 git clone https://github.com/unixorn/zsh-quickstart-kit.git
 cd zsh-quickstart-kit
-stow --target="$HOME" zsh
+./bootsrap-zsh-quickstart-kit
 ```
 
 Restart iTerm
