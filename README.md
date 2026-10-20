@@ -7,11 +7,15 @@
 ```
 
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/rwong/.zprofile
+echo >> /Users/rwong/.zprofile
 ```
 
 ```bash
-eval "$(/opt/homebrew/bin/brew shellenv)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/rwong/.zprofile
+```
+
+```bash
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 ```
 
 ```bash
@@ -24,7 +28,6 @@ brew doctor
 
 ```bash
 brew tap \
-  homebrew/cask-fonts \
   vmware-tanzu/carvel
 ```
 
