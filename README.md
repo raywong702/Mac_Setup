@@ -414,7 +414,7 @@ echo "kubectl="kubecolor"" >> ~/.zshrc
 ## mise
 
 ```bash
-echo "\n#" >> ~/.zshrc
+echo "\n# mise" >> ~/.zshrc
 echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 ```
 
