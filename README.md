@@ -34,30 +34,30 @@ brew tap \
 ```bash
 brew install --cask \
     alfred \
-	android-commandlinetools \
+    android-commandlinetools \
     android-file-transfer \
     appcleaner \
     bartender \
-	castctl \
+    castctl \
     devtoys \
     docker \
-	firefox \
+    firefox \
     flux-app \
-	font-hack-nerd-font \
-	font-meslo-lg-nerd-font \
-	gcloud-cli \
+    font-hack-nerd-font \
+    font-meslo-lg-nerd-font \
+    gcloud-cli \
     gitkraken \
-	google-cloud-sdk \
+    google-cloud-sdk \
     iterm2 \
     itsycal \
     latest \
     loom \
     microsoft-edge \
     obsidian \
-	orbstack \
-	pgadmin4 \
+    orbstack \
+    pgadmin4 \
     postman \
-	realnvnc-connect-viewer
+    realnvnc-connect-viewer
     rectangle \
     shottr \
     spotify \
@@ -66,10 +66,10 @@ brew install --cask \
     the-unarchiver \
     tealdeer \
     visual-studio-code \
-	vnc-viewer \
-	wireshark-app \
-	zed \
-	lingrino/tap/vaku
+    vnc-viewer \
+    wireshark-app \
+    zed \
+    lingrino/tap/vaku
 ```
 
 ## Brew Install ##
@@ -84,29 +84,29 @@ brew install \
     argocd \
     argocd-vault-plugin \
     awscli \
-	bash \
+    bash \
     bat \
     container-diff \
-	coreutils \
-	crane \
-	curlie \
+    coreutils \
+    crane \
+    curlie \
     dive \
     eza \
     fastlane \
-	fastly \
+    fastly \
     font-meslo-lg-nerd-font \
     fd \
-	findutils \
+    findutils \
     fzf \
     gh \
-	git \
-	git-delta \
-	git-filter-repo
-	go \
+    git \
+    git-delta \
+    git-filter-repo
+    go \
     google-cloud-sdk \
-	goreleaser \
+    goreleaser \
     helm \
-	jfrog-cli \
+    jfrog-cli \
     jq \
     k3d \
     k9s \
@@ -116,22 +116,22 @@ brew install \
     kubernetes-cli \
     kustomize \
     mise \
-	mongoose \
+    mongoose \
     neovim \
     npm \
-	pluto \
+    pluto \
     ripgrep \
     stern \
     stow \
     swiftformat \
     swiftlint \
-	switch \
+    switch \
     tealdeer \
-	terminal-notifier \
+    terminal-notifier \
     thefuck \
     tree \
-	tree-sitter-cli \
-	vaku \
+    tree-sitter-cli \
+    vaku \
     vendir \
     vim \
     yq \
@@ -406,7 +406,7 @@ echo 'export PATH="/opt/homebrew/share/android-commandlinetools/platform-tools:/
 ## kubecolor
 
 ```bash
-echo "\n# kubecolor"
+echo "\n# kubecolor" >> ~/.zshrc
 echo "kubectl="kubecolor"" >> ~/.zshrc
 ```
 
