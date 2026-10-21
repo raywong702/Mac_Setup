@@ -214,12 +214,12 @@ echo 'export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"' >> ~/.zsh
 echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"' >> ~/.zshrc
 
-echo "\n# MANPATH" >> ~/.zshrc
-echo 'export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
-echo 'export MANPATH="$(brew --prefix)/opt/findutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
-echo 'export MANPATH="$(brew --prefix)/opt/gnu-tar/libexec/gnuman:MANPATH"' >> ~/.zshrc
-echo 'export MANPATH="$(brew --prefix)/opt/gnu-sed/libexec/gnuman:MANPATH"' >> ~/.zshrc
-echo 'export MANPATH="$(brew --prefix)/opt/gnu-indent/libexec/gnuman:$MANPATH"' >> ~/.zshrc
+# echo "\n# MANPATH" >> ~/.zshrc
+# echo 'export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
+# echo 'export MANPATH="$(brew --prefix)/opt/findutils/libexec/gnuman:MANPATH"' >> ~/.zshrc
+# echo 'export MANPATH="$(brew --prefix)/opt/gnu-tar/libexec/gnuman:MANPATH"' >> ~/.zshrc
+# echo 'export MANPATH="$(brew --prefix)/opt/gnu-sed/libexec/gnuman:MANPATH"' >> ~/.zshrc
+# echo 'export MANPATH="$(brew --prefix)/opt/gnu-indent/libexec/gnuman:$MANPATH"' >> ~/.zshrc
 ```
 
 ## iTerm ##
@@ -597,7 +597,9 @@ Extensions
 
 * Code Spell Checker
 * CodeSnap
+* Dev Containers
 * Docker
+* Docker DX
 * GitHub Copilot
 * GitHub Copilot Chat
 * Go
