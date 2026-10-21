@@ -429,11 +429,11 @@ echo 'alias kraken="open gitkraken://repo/$(pwd)"' >> ~/.zshrc
 
 ```bash
 echo "\n# cloud auth" >> ~/.zshrc
-echo 'pre exec() {' >> ~/.zshrc
-echo '    if [[ "$(cloud auth print-identity-token 2>/dev/null)" == "" ]]' >> ~/.zshrc
+echo 'preexec() {' >> ~/.zshrc
+echo '    if [[ "$(gcloud auth print-identity-token 2>/dev/null)" == "" ]]' >> ~/.zshrc
 echo '    then' >> ~/.zshrc
 echo '        open -n -a "Firefox"' >> ~/.zshrc
-echo '        cloud auth login --update-adc' >> ~/.zshrc
+echo '        gcloud auth login --update-adc' >> ~/.zshrc
 echo '    fi' >> ~/.zshrc
 echo '}' >> ~/.zshrc
 ```
