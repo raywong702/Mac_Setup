@@ -486,6 +486,10 @@ curl -fsSL https://raw.githubusercontent.com/raywong702/Mac_Setup/master/.gitign
 ## global git config ##
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/dandavison/delta/main/themes.gitconfig -o ~/delta-themes.gitconfig
+```
+
+```bash
 cat <<EOF >> ~/.gitconfig
 [credential "https://github.com"]
 	helper =
@@ -547,6 +551,13 @@ cat <<EOF >> ~/.gitconfig
         # conflictstyle = zdiff3
 [pull]
         # rebase = true
+
+# delta
+
+[delta]
+        features = "Dracula"
+[include]
+        path = ~/delta-themes.gitconfig
 EOF
 ```
 
@@ -682,3 +693,4 @@ Profile Icon > Enable Settings Sync
 * https://betterprogramming.pub/how-to-make-macos-command-utilities-compatible-with-gnu-core-utilities-87889b266f4b
 * https://github.com/nvim-lua/kickstart.nvim
 * https://blog.gitbutler.com/how-git-core-devs-configure-git/
+* https://github.com/dandavison/delta
