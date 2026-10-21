@@ -461,6 +461,13 @@ echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion' >> ~/.zshrc
 ```
 
+## k9s
+
+```bash
+echo "\n# k9s" >> ~/.zshrc
+echo 'export K9S_SKIN="dracula"' >> ~/.zshrc
+```
+
 ## git global config ##
 
 ```bash
