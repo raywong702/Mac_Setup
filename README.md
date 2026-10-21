@@ -204,6 +204,7 @@ Disable brew analytics in ~/.zshrc
 ```bash
 echo "\n# brew" >> ~/.zshrc
 echo 'export HOMEBREW_NO_ANALYTICS=1'  >> ~/.zshrc
+echo 'export HOMEBREW_NO_ASK=1' >> ~/.zshrc
 ```
 
 ```bash
@@ -381,7 +382,7 @@ echo "LC_ALL=en_US.UTF-8" >> ~/.zshrc
 echo "LANG=en_US.UTF-8" >> ~/.zshrc
 ```
 
-## zoxicde
+## zoxcide
 
 ```bash
 echo "\n# zoxide" >> ~/.zshrc
@@ -422,6 +423,42 @@ echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 ```bash
 echo "\n# gitkraken" >> ~/.zshrc
 echo 'alias kraken="open gitkraken://repo/$(pwd)"' >> ~/.zshrc
+```
+
+## cloud auth
+
+```bash
+echo "\n# cloud auth" >> ~/.zshrc
+echo 'pre exec() {' >> ~/.zshrc
+echo '    if [[ "$(cloud auth print-identity-token 2>/dev/null)" == "" ]]' >> ~/.zshrc
+echo '        then' >> ~/.zshrc
+echo '            open -n -a "Firefox"' >> ~/.zshrc
+echo '            cloud auth login --update-adc' >> ~/.zshrc
+echo '    fi' >> ~/.zshrc
+echo '}' >> ~/.zshrc
+```
+
+## libpq
+
+```bash
+echo "\n# libpq" >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/libpq/bin:$PATH"' >> ~/.zshrc
+```
+
+## krew
+
+```bash
+echo "\n# krew" >> ~/.zshrc
+echo 'export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"' >> ~/.zshrc
+```
+
+## nvm
+
+```bash
+echo "\n# nvm" >> ~/.zshrc
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm' >> ~/.zshrc
+echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion' >> ~/.zshrc
 ```
 
 ## git global config ##
