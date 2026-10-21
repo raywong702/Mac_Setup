@@ -464,6 +464,11 @@ echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homeb
 ## k9s
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/derailed/k9s/refs/heads/master/skins/dracula.yaml \
+  -o ~/Library/"Application Support"/k9s/skins/dracula.yaml
+```
+
+```bash
 echo "\n# k9s" >> ~/.zshrc
 echo 'export K9S_SKIN="dracula"' >> ~/.zshrc
 ```
