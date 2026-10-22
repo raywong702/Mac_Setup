@@ -573,6 +573,11 @@ cat <<EOF >> ~/.gitconfig
         features = "Dracula"
 [include]
         path = ~/delta-themes.gitconfig
+
+# clean up branches
+
+[alias]
+	pull = !git pull \"$@\" && git fetch -p && git branch --merged | grep -vE \"^\\*|main|master\" | xargs -r git branch -d
 EOF
 ```
 
