@@ -58,7 +58,8 @@ brew install --cask \
     orbstack \
     pgadmin4 \
     postman \
-    realnvnc-connect-viewer
+    raycast \
+    realnvnc-connect-viewer \
     rectangle \
     shottr \
     spotify \
