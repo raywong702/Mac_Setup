@@ -63,6 +63,7 @@ brew install --cask \
     spotify \
     spotmenu \
     sublime-text \
+    tailscale-app \
     the-unarchiver \
     tealdeer \
     visual-studio-code \
