@@ -38,6 +38,7 @@ brew install --cask \
     android-file-transfer \
     appcleaner \
     bartender \
+    caffeine \
     castctl \
     devtoys \
     docker \
