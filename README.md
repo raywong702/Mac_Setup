@@ -685,6 +685,12 @@ Peacock Extension Settings
 
 Profile Icon > Enable Settings Sync
 
+## remove profile icon
+
+```bash
+sudo dscl . delete /Users/$(whoami) jpegphoto
+```
+
 ## vpn ##
 
 * remoteaccess.forbes.com
