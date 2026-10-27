@@ -476,6 +476,14 @@ echo "\n# k9s" >> ~/.zshrc
 echo 'export K9S_SKIN="dracula"' >> ~/.zshrc
 ```
 
+## go
+
+```bash
+echo "\n# go" >> ~/.zshrc
+echo 'export PATH="$PATH:$(go env GOPATH)/bin"' >> ~/.zshrc
+```
+
+
 ## git global config ##
 
 ```bash
