@@ -589,6 +589,13 @@ cat <<EOF >> ~/.gitconfig
 EOF
 ```
 
+remove from `~/.gitconfig` as you're using `~/.gitignore_global`
+
+```
+[core]
+        excludesfile = ~/.gitignore
+```
+
 ## nvim ##
 
 ```bash
@@ -702,7 +709,10 @@ Profile Icon > Enable Settings Sync
 
 ```bash
 sudo dscl . delete /Users/$(whoami) jpegphoto
+sudo dscl . delete /Users/$(whoami) Picture
 ```
+
+restart the mac
 
 ## vpn ##
 
